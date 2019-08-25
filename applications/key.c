@@ -7,12 +7,16 @@
 unsigned int count = 0;
 void key_callback(void *args)
 {
-		count++;
-		rt_kprintf("%d   ",count);
-		rt_kprintf("ok\n");
-		if(count>100)
+//		rt_thread_delay(1);
+		if(rt_pin_read(KEY1_PIN)==1)
 		{
-				rt_pin_irq_enable(KEY1_PIN, PIN_IRQ_DISABLE);
+				rt_kprintf("press\nmsh >");
+				rt_pin_write(LED1_PIN, 1);
+		}
+		else if(rt_pin_read(KEY1_PIN)==0)
+		{
+				rt_kprintf("up\nmsh >");
+				rt_pin_write(LED1_PIN, 0);
 		}
 }
 
