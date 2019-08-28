@@ -5,7 +5,7 @@
  *
  * Change Logs:
  * Date           Author       Notes
- * 2018-11-08     balanceTWK   change to new framework
+ * 2018-11-08     balanceTWK   first version
  */
 
 #ifndef __DRV_I2C__
@@ -64,7 +64,6 @@ struct stm32_i2c
         .bus_name = "i2c4",                              \
     }
 #endif
-
 int rt_hw_i2c_init(void);
 
 #endif

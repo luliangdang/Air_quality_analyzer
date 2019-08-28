@@ -17,7 +17,7 @@ int main(void)
 {
 //    int count = 1;
 //    while (count++)
-//    {
+//    { 
 //        rt_pin_write(LED1_PIN, !rt_pin_read(LED1_PIN));
 //        rt_thread_mdelay(500);
 //    }
