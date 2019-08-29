@@ -13,31 +13,24 @@
 build
 Debug
 documentation/html
-packages/
 *~
 *.o
 *.obj
-*.out
 *.bak
 *.dep
 *.lib
+*.a
 *.i
 *.d
-.DS_Stor*
-.config 3
-.config 4
-.config 5
-Midea-X1
-*.uimg
-GPATH
-GRTAGS
-GTAGS
-.vscode
-JLinkLog.txt
-JLinkSettings.ini
-DebugConfig/
-RTE/
-figures/
-settings/
-*.uvguix*
+tools/kconfig-frontends/kconfig-mconf
+packages
 cconfig.h
+GPUCache
+
+#cscope files
+cscope.*
+ncscope.*
+
+#ctag files
+tags
+
