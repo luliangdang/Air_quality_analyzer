@@ -16,12 +16,13 @@ documentation/html
 *~
 *.o
 *.obj
-*.out
 *.bak
 *.dep
 *.lib
+*.a
 *.i
 *.d
+<<<<<<< HEAD
 .DS_Stor*
 .config 3
 .config 4
@@ -38,4 +39,17 @@ DebugConfig/
 RTE/
 figures/
 *.uvguix*
+=======
+tools/kconfig-frontends/kconfig-mconf
+packages
+>>>>>>> 752562883cbc5129939296bc88dd3b94b451f44d
 cconfig.h
+GPUCache
+
+#cscope files
+cscope.*
+ncscope.*
+
+#ctag files
+tags
+
