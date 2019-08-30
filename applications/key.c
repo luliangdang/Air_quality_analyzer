@@ -20,13 +20,13 @@ void key_callback(void *args)
 				rt_pin_write(LED1_PIN, PIN_HIGH);
 		}
 }
-
+/* 按键初始化 */
 void key_init(void)
 {
 		/* 按键引脚为输入模式 */
 		rt_pin_mode(KEY1_PIN, PIN_MODE_INPUT_PULLDOWN);
 }
-
+/* 按键测试函数 */
 void key_sample(void)
 {
 		/* 按键引脚初始化 */
