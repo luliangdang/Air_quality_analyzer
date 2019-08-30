@@ -1,0 +1,12 @@
+[
+ {
+  "path": "/packages/peripherals/sensors/dht11", 
+  "ver": "latest", 
+  "name": "DHT11"
+ }, 
+ {
+  "path": "/packages/misc/samples/filesystem_samples", 
+  "ver": "v0.2.0", 
+  "name": "FILESYSTEM_SAMPLES"
+ }
+]
