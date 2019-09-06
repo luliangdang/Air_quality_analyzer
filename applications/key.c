@@ -27,7 +27,7 @@ void key_init(void)
 		rt_pin_mode(KEY1_PIN, PIN_MODE_INPUT_PULLDOWN);
 }
 /* 按键测试函数 */
-void key_sample(void)
+static int key_sample(void)
 {
 		/* 按键引脚初始化 */
 		key_init();
