@@ -8,6 +8,8 @@ main.c
 key.c
 led_alert.c
 temp_humi.c
+pm25.c
+pm25_th.c
 """)
 
 group = DefineGroup('Applications', src, depend = [''], CPPPATH = CPPPATH)

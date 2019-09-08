@@ -53,7 +53,7 @@ static void temp_humi_read_entry(void *parameter)
             {
                 uint8_t temp = (sensor_data.data.temp & 0xffff) >> 0;      // get temp
                 uint8_t humi = (sensor_data.data.temp & 0xffff0000) >> 16; // get humi
-                rt_kprintf("temp:%d, humi:%d\nmsh />" ,temp, humi);
+                rt_kprintf("temp:%d, humi:%d\n" ,temp, humi);
             }
         }
 				led_blink(LED0_PIN);
@@ -83,7 +83,7 @@ static int dht11_sample_thread(void)
 		return RT_EOK;
 }
 MSH_CMD_EXPORT(dht11_sample_thread, dht11 test sample);
-//INIT_APP_EXPORT(dht11_sample_thread);
+
 /* 初始化DHT11数据引脚 */
 static int rt_hw_dht11_port(void)
 {
